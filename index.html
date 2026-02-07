@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="sidebar">
+            <div class="logo">
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+
+            <nav>
+                <a href="#" class="nav-link active"><i class="fas fa-house"></i> <span>Home</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-magnifying-glass"></i> <span>Explore</span></a>
+                <a href="#" class="nav-link"><i class="far fa-bell"></i> <span>Notifications</span></a>
+                <a href="#" class="nav-link"><i class="far fa-envelope"></i> <span>Messages</span></a>
+                <a href="#" class="nav-link"><i class="far fa-user"></i> <span>Profile</span></a>
+            </nav>
+
+            <button class="post-btn-sidebar">Post</button>
+            
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <img src="img1.jpg" alt="user">
+                </div>
+                <div class="user-info">
+                    <span class="name">My Account</span>
+                    <span class="handle">@rohanjain</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="feed">
+            <div class="feed-header">
+                <h2>Home</h2>
+                <div class="feed-tabs">
+                    <div class="tab active">For you</div>
+                    <div class="tab">Following</div>
+                </div>
+            </div>
+
+            <div class="tweet-box">
+                <div class="tweet-box-wrapper">
+                    <img src="img1.jpg" alt="profile" class="avatar">
+                    <div class="input-area">
+                        <textarea id="tweet-input" rows="1" placeholder="What is happening?!"></textarea>
+                        <div class="input-footer">
+                            <div class="input-icons">
+                                <i class="far fa-image"></i>
+                                <i class="fas fa-square-poll-horizontal"></i>
+                                <i class="far fa-face-smile"></i>
+                                <i class="far fa-calendar"></i>
+                            </div>
+                            <button id="post-btn" class="post-btn-small" disabled>Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="feed-container">
+                
+                <div class="post">
+                    <div class="post-avatar">
+                        <img src="img2.jpg" alt="user">
+                    </div>
+                    <div class="post-body">
+                        <div class="post-header">
+                            <span class="user-name">Aritra Basu</span>
+                            <span class="user-handle">@aritrabasu</span>
+                            <span class="time">· 2h</span>
+                        </div>
+                        <div class="post-content">
+                            This is a clone of X made with HTML, CSS, and JS.
+                        </div>
+                        <div class="post-footer">
+                            <div class="action-btn comment"><i class="far fa-comment"></i> <span>450</span></div>
+                            <div class="action-btn retweet"><i class="fas fa-retweet"></i> <span class="count">1.2K</span></div>
+                            <div class="action-btn like"><i class="far fa-heart"></i> <span class="count">54K</span></div>
+                            <div class="action-btn share"><i class="fas fa-arrow-up-from-bracket"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <aside class="widgets">
+            <div class="search-bar">
+                <i class="fas fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="widget-box">
+                <h3>Subscribe to Premium</h3>
+                <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+
+            <div class="widget-box">
+                <h3>What's happening</h3>
+                <div class="trend-item">
+                    <span>Trending in Tech</span>
+                    <h4>#AI & Machine Learning</h4>
+                    <span>2.8K posts</span>
+                </div>
+                <div class="trend-item">
+                    <span>Trending in Sports</span>
+                    <h4>#IPL</h4>
+                    <span>5.9K posts</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
